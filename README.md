@@ -1,0 +1,4 @@
+# Algorithms
+- [ ] A*
+- [ ] BFS
+- [ ] Djikstra
