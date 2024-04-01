@@ -1,0 +1,43 @@
+#card-container {
+  width: 95%;
+  display: grid;
+  margin: auto;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#card {
+  border: 5px solid gray;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+#card:hover {
+  animation-duration: 2s;
+  animation-name: border-fill;
+  animation-fill-mode: forwards;
+}
+
+@keyframes border-fill {
+  25% {
+    border-bottom-color: var(--blue);
+  }
+
+  75% {
+    border-left-color: var(--blue);
+    border-right-color: var(--blue);
+  }
+
+  100% {
+    border-color: var(--blue);
+  }
+}
+
+@media (min-width: 1250px) {
+  #card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
