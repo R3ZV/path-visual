@@ -1,4 +1,12 @@
-#card-container {
+#dropdown-content {
+  display: none;
+}
+
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+
+.card-container {
   width: 95%;
   display: grid;
   margin: auto;
@@ -7,35 +15,43 @@
   grid-template-rows: repeat(3, 1fr);
 }
 
-#card {
+.card {
   border: 5px solid gray;
-  border-radius: 15px;
+  border-radius: 9px;
   padding: 1rem;
+  opacity: 0.7;
 }
 
-#card:hover {
-  animation-duration: 2s;
+.card:hover {
+  animation-duration: 1s;
   animation-name: border-fill;
   animation-fill-mode: forwards;
 }
 
+/* TODO: add shadowbox */
 @keyframes border-fill {
   25% {
     border-bottom-color: var(--blue);
+    opacity: 0.8;
+    border-radius: 11px;
   }
 
   75% {
     border-left-color: var(--blue);
     border-right-color: var(--blue);
+    opacity: 0.9;
+    border-radius: 13px;
   }
 
   100% {
     border-color: var(--blue);
+    opacity: 1;
+    border-radius: 15px;
   }
 }
 
 @media (min-width: 1250px) {
-  #card-container {
+  .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;

@@ -1,9 +1,9 @@
 :root {
-  --red: #9A031E;
-  --blue: #090C9B;
-  --black: #0f0f0f;
-  --green: #2BA84A;
-  --yellow: #E3C567;
+  --red: rgba(154, 3, 30, 1);
+  --blue: rgba(9, 12, 155, 1);
+  --black: rgba(15, 15, 15, 1);
+  --green: rgba(43, 168, 74, 1);
+  --yellow: rgba(227, 197, 103, 1);
 }
 
 * {

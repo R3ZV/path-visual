@@ -22,85 +22,100 @@
       <li>
         <a href="visual.html">Visualizer</a>
       </li>
+      <li>
+        <div id="dropdown">
+          <a>More</a>
+          <div id="dropdown-content">
+            <a href="#algorithms-info">Info</a>
+            <a href="#algorithms-showcase">Showcase</a>
+            <a href="#algorithms-comparison">Comparison</a>
+          </div>
+        </div>
+      </li>
     </ul>
   </header>
   <main>
-    <h1>Algorithms:</h1>
-    <section id="card-container">
-      <article id="card">
-        <h2>A*</h2>
+    <section id="algorithms-info">
+      <h1>Algorithms:</h1>
+      <div class="card-container">
+        <article class="card">
+          <h2>A*</h2>
 
-        <p>
-          A* (pronounced "A-star") is a graph traversal and pathfinding algorithm,
-          which is used in many fields of computer science due to its completeness,
-          optimality, and optimal efficiency.
-        </p>
+          <p>
+            A* (pronounced "A-star") is a graph traversal and pathfinding algorithm,
+            which is used in many fields of computer science due to its completeness,
+            optimality, and optimal efficiency.
+          </p>
 
 
-        <p>
-          Given a weighted graph, a source node and a goal node, the algorithm
-          finds the shortest path (with respect to the given weights) from source to goal.
-        </p>
+          <p>
+            Given a weighted graph, a source node and a goal node, the algorithm
+            finds the shortest path (with respect to the given weights) from source to goal.
+          </p>
 
-        <p>
-          One major practical drawback is its O(b^d) space complexity, as it stores all
-          generated nodes in memory. Thus, in practical travel-routing systems, it is generally outperformed by
-          algorithms
-          that can pre-process the graph to attain better performance, as well as by memory-bounded approaches;
-          however, A* is still the best solution in many cases.
-        </p>
-        <p> More
-          <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">
-            here
-          </a>
-        </p>
-      </article>
+          <p>
+            One major practical drawback is its O(b^d) space complexity, as it stores all
+            generated nodes in memory. Thus, in practical travel-routing systems, it is generally outperformed by
+            algorithms
+            that can pre-process the graph to attain better performance, as well as by memory-bounded approaches;
+            however, A* is still the best solution in many cases.
+          </p>
+          <p> More
+            <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">
+              here
+            </a>
+          </p>
+        </article>
 
-      <article id="card">
-        <h2>BFS</h2>
-        <p>
-          Breadth-first search (BFS) is an algorithm for searching a tree data structure for a node that satisfies a
-          given property. It starts at the tree root and explores all nodes at the present depth prior to moving on to
-          the nodes at the next depth level. Extra memory, usually a queue, is needed to keep track of the child nodes
-          that were encountered but not yet explored.
-        </p>
+        <article class="card">
+          <h2>BFS</h2>
+          <p>
+            Breadth-first search (BFS) is an algorithm for searching a tree data structure for a node that satisfies a
+            given property. It starts at the tree root and explores all nodes at the present depth prior to moving on to
+            the nodes at the next depth level. Extra memory, usually a queue, is needed to keep track of the child nodes
+            that were encountered but not yet explored.
+          </p>
 
-        <p>
-          For example, in a chess endgame, a chess engine may build the game tree from the current position by applying
-          all possible moves and use breadth-first search to find a win position for White. Implicit trees (such as game
-          trees or other problem-solving trees) may be of infinite size; breadth-first search is guaranteed to find a
-          solution node if one exists.
-        </p>
+          <p>
+            For example, in a chess endgame, a chess engine may build the game tree from the current position by
+            applying
+            all possible moves and use breadth-first search to find a win position for White. Implicit trees (such as
+            game
+            trees or other problem-solving trees) may be of infinite size; breadth-first search is guaranteed to find a
+            solution node if one exists.
+          </p>
 
-        <p> More
-          <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">
-            here
-          </a>
-        </p>
-      </article>
+          <p> More
+            <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">
+              here
+            </a>
+          </p>
+        </article>
 
-      <article id="card">
-        <h2>Dijkstra</h2>
+        <article class="card">
+          <h2>Dijkstra</h2>
 
-        <p>
-          Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in
-          a weighted graph, which may represent, for example, road networks. It was conceived by computer scientist
-          Edsger W. Dijkstra in 1956 and published three years later.
-        </p>
+          <p>
+            Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in
+            a weighted graph, which may represent, for example, road networks. It was conceived by computer scientist
+            Edsger W. Dijkstra in 1956 and published three years later.
+          </p>
 
-        <p>
-          The algorithm exists in many variants. Dijkstra's original algorithm found the shortest path between two given
-          nodes, but a more common variant fixes a single node as the "source" node and finds shortest paths from the
-          source to all other nodes in the graph, producing a shortest-path tree.
-        </p>
+          <p>
+            The algorithm exists in many variants. Dijkstra's original algorithm found the shortest path between two
+            given
+            nodes, but a more common variant fixes a single node as the "source" node and finds shortest paths from the
+            source to all other nodes in the graph, producing a shortest-path tree.
+          </p>
 
-        <p> More
-          <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">
-            here
-          </a>
-        </p>
-      </article>
+          <p> More
+            <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">
+              here
+            </a>
+          </p>
+        </article>
 
+      </div>
     </section>
   </main>
   <footer>
