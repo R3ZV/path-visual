@@ -72,12 +72,13 @@
 section h1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    text-decoration: underline 0.05em rgba(0, 0, 0, 0);
+    text-decoration: underline 0.1em rgba(0, 0, 0, 0);
 }
 
 section h1:hover {
-    text-decoration-color: rgba(0, 0, 0, 1);
-    transition: text-decoration-color 1s;
+    text-decoration-color: var(--green);
+    color: var(--blue);
+    transition: all, 1s;
 }
 
 
