@@ -2,125 +2,162 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Path Visualizer</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./index.css">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  <script type="text/javascript" src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Path Visualizer</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1>Path Visualizer</h1>
-    <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="visual.html">Visualizer</a>
-      </li>
-      <li>
-        <div id="dropdown">
-          <a>More</a>
-          <div id="dropdown-content">
-            <a href="#algorithms-info">Info</a>
-            <a href="#algorithms-showcase">Showcase</a>
-            <a href="#algorithms-comparison">Comparison</a>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </header>
-  <main>
-    <section id="algorithms-info">
-      <h1>Algorithms:</h1>
-      <div class="card-container">
-        <article class="card">
-          <h2>A*</h2>
+    <header>
+        <h1>Path Visualizer</h1>
+        <ul>
+            <li>
+                <div id="dropdown">
+                    <input id="dropdown-menu" type="checkbox" name="menu" />
+                    <label for="dropdown-menu">Menu</label>
+                    <div id="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="visual.html">Try</a>
+                        <a href="#algorithms-info">Info</a>
+                        <a href="#algorithms-demo">Demo</a>
+                        <a href="#algorithms-diff">Diff</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section id="algorithms-info">
+            <h1>Algorithms Info:</h1>
+            <div class="card-container">
+                <article class="card">
+                    <h2>A*</h2>
 
-          <p>
-            A* (pronounced "A-star") is a graph traversal and pathfinding algorithm,
-            which is used in many fields of computer science due to its completeness,
-            optimality, and optimal efficiency.
-          </p>
+                    <p>
+                        A* (pronounced "A-star") is a graph traversal and pathfinding algorithm,
+                        which is used in many fields of computer science due to its completeness,
+                        optimality, and optimal efficiency.
+                    </p>
 
 
-          <p>
-            Given a weighted graph, a source node and a goal node, the algorithm
-            finds the shortest path (with respect to the given weights) from source to goal.
-          </p>
+                    <p>
+                        Given a weighted graph, a source node and a goal node, the algorithm
+                        finds the shortest path (with respect to the given weights) from source to goal.
+                    </p>
 
-          <p>
-            One major practical drawback is its O(b^d) space complexity, as it stores all
-            generated nodes in memory. Thus, in practical travel-routing systems, it is generally outperformed by
-            algorithms
-            that can pre-process the graph to attain better performance, as well as by memory-bounded approaches;
-            however, A* is still the best solution in many cases.
-          </p>
-          <p> More
-            <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">
-              here
-            </a>
-          </p>
-        </article>
+                    <p>
+                        One major practical drawback is its O(b^d) space complexity, as it stores all
+                        generated nodes in memory. Thus, in practical travel-routing systems, it is generally
+                        outperformed by
+                        algorithms
+                        that can pre-process the graph to attain better performance, as well as by memory-bounded
+                        approaches;
+                        however, A* is still the best solution in many cases.
+                    </p>
+                    <p> More
+                        <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">
+                            here
+                        </a>
+                    </p>
+                </article>
 
-        <article class="card">
-          <h2>BFS</h2>
-          <p>
-            Breadth-first search (BFS) is an algorithm for searching a tree data structure for a node that satisfies a
-            given property. It starts at the tree root and explores all nodes at the present depth prior to moving on to
-            the nodes at the next depth level. Extra memory, usually a queue, is needed to keep track of the child nodes
-            that were encountered but not yet explored.
-          </p>
+                <article class="card">
+                    <h2>BFS</h2>
+                    <p>
+                        Breadth-first search (BFS) is an algorithm for searching a tree data structure for a node that
+                        satisfies a
+                        given property. It starts at the tree root and explores all nodes at the present depth prior to
+                        moving on to
+                        the nodes at the next depth level. Extra memory, usually a queue, is needed to keep track of the
+                        child nodes
+                        that were encountered but not yet explored.
+                    </p>
 
-          <p>
-            For example, in a chess endgame, a chess engine may build the game tree from the current position by
-            applying
-            all possible moves and use breadth-first search to find a win position for White. Implicit trees (such as
-            game
-            trees or other problem-solving trees) may be of infinite size; breadth-first search is guaranteed to find a
-            solution node if one exists.
-          </p>
+                    <p>
+                        For example, in a chess endgame, a chess engine may build the game tree from the current
+                        position by
+                        applying
+                        all possible moves and use breadth-first search to find a win position for White. Implicit trees
+                        (such as
+                        game
+                        trees or other problem-solving trees) may be of infinite size; breadth-first search is
+                        guaranteed to find a
+                        solution node if one exists.
+                    </p>
 
-          <p> More
-            <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">
-              here
-            </a>
-          </p>
-        </article>
+                    <p> More
+                        <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">
+                            here
+                        </a>
+                    </p>
+                </article>
 
-        <article class="card">
-          <h2>Dijkstra</h2>
+                <article class="card">
+                    <h2>DFS</h2>
 
-          <p>
-            Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in
-            a weighted graph, which may represent, for example, road networks. It was conceived by computer scientist
-            Edsger W. Dijkstra in 1956 and published three years later.
-          </p>
+                    <p>
+                        Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data
+                        structures. The algorithm starts at the root node (selecting some arbitrary node as the root
+                        node in the case of a graph) and explores as far as possible along each branch before
+                        backtracking. Extra memory, usually a stack, is needed to keep track of the nodes discovered so
+                        far along a specified branch which helps in backtracking of the graph.
+                    </p>
 
-          <p>
-            The algorithm exists in many variants. Dijkstra's original algorithm found the shortest path between two
-            given
-            nodes, but a more common variant fixes a single node as the "source" node and finds shortest paths from the
-            source to all other nodes in the graph, producing a shortest-path tree.
-          </p>
+                    <p>
+                        A version of depth-first search was investigated in the 19th century by French mathematician
+                        Charles Pierre Trémaux[1] as a strategy for solving mazes.[2][3]
+                    </p>
 
-          <p> More
-            <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">
-              here
-            </a>
-          </p>
-        </article>
+                    <p> More
+                        <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">
+                            here
+                        </a>
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section id="algorithms-demo">
+            <article class="card">
+                <h2>A*</h2>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiro2j3SvMhRkhwEOAUxwep8bOKRUslMyFDrfcy8T4HZYAhOaFhfa9MG26mgAF4vqOtsq5nDukaVJYG-EiujNoV5jPbp6BzIJQXEVv50BsbW9lbkwO1cJb5jmeNeyn8BCcpOsGE0z0nCodv/s320/ezgif-1-64c3c2a743f0.gif"
+                    alt="A* Search Algorithm Animation">
+            </article>
+            <article class="card">
+                <h2>BFS</h2>
+                <img src="https://www3.cs.stonybrook.edu/~skiena/combinatorica/animations/anim/bfs.gif"
+                    alt="Breadth-First Search Algorithm Animation">
+            </article>
+            <article class="card">
+                <h2>DFS</h2>
+                <img src="https://www3.cs.stonybrook.edu/~skiena/combinatorica/animations/anim/dfs.gif"
+                    alt="Depth-First Search Algorithm Animation">
+            </article>
+        </section>
+        <section id="algorithms-diff">
+            <h1>Algorithms Diff:</h1>
+            <div id="complexity-graph">
+                <div class="algo-bar" id="bfs-bar">
+                    <p>BFS</p>
+                </div>
 
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>Made by R3ZV in <span>O(<del>2 *</del> weeks)</span></p>
-  </footer>
+                <div class="algo-bar" id="dfs-bar">
+                    <p>DFS</p>
+                </div>
+
+                <div class="algo-bar" id="a-str-bar">
+                    <p>A*</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Made by R3ZV in <span>O(<del>2 *</del> weeks)</span></p>
+    </footer>
 </body>
 
 </html>
