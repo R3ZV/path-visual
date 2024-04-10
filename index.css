@@ -69,13 +69,13 @@
     }
 }
 
-section h1 {
+section h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-decoration: underline 0.1em rgba(0, 0, 0, 0);
 }
 
-section h1:hover {
+section h2:hover {
     text-decoration-color: var(--green);
     color: var(--blue);
     transition: all, 1s;
@@ -167,13 +167,6 @@ section h1:hover {
         height: 4em;
         color: white;
     }
-}
-
-#algorithms-demo {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 #algorithms-demo .card {
