@@ -1,12 +1,15 @@
-# Algorithms
-- [ ] A*
-- [ ] BFS
-- [ ] Djikstra
+# Todo
+- [x] Display grid
+- [x] Add / Remove wall cells with click 
+- [ ] Add start cell
+- [ ] Add end cell
+- [ ] Implement BFS
+- [ ] Init Bun project
 
-# TODOs
+# Project Goals
+
 ## JS
-
-- [ ] Have all the JS code be in its own file
+- [x] Have all the JS code be in its own file
 - [ ] Chance the style of an element / group of elements
 - [ ] DOM manipulation
 - [ ] Creation / deletion of HTML elements
@@ -19,13 +22,13 @@
 - [ ] Change the value of an element's properity 
 - [ ] Use the properties from classList, target or currentTarget
 - [ ] Use getComputedStyle, stopPropagation methods
-- [ ] Validate form data using RegEx (validate the user's email)
+- [ ] Validate form data using RegEx (validate the user's email or password)
 
 ## Node.js
 - [ ] GET/POST requests: using data from a form
 - [ ] Ajax requests by using data from a json file
 - [ ] login/logout system
-- [ ] 404 page
+- [ ] 404 page (use the cat error messages or something with dogs)
 
 ## Other
 - [ ] Make the website be in 2 different languages
