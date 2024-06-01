@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./visual.css">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="visual.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,17 @@
   </header>
 
   <main>
-    <h1>TODO</h1>
+    <div id="maze">
+      <div id="grid">
+      </div>
+      <select name="algorithms" id="algorithms">
+        <option value="a-star">A*</option>
+        <option value="bfs">BFS</option>
+        <option value="dfs">DFS</option>
+      </select>
+      <button id="solve-btn">Solve</button>
+      <button id="random-btn">Random</button>
+    </div>
   </main>
 
   <footer>
