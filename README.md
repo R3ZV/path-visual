@@ -1,24 +1,26 @@
 # Todo
 - [x] Display grid
 - [x] Add / Remove wall cells with click 
-- [ ] Add start cell
-- [ ] Add end cell
-- [ ] Implement BFS
-- [ ] Init Bun project
+- [x] Add start cell
+- [x] Add end cell
+- [x] Implement BFS
+- [x] Render how the search goes
+- [ ] Render the shortest path
+- [ ] Init Bun / Node project
 
 # Project Goals
 
 ## JS
 - [x] Have all the JS code be in its own file
-- [ ] Chance the style of an element / group of elements
-- [ ] DOM manipulation
-- [ ] Creation / deletion of HTML elements
-- [ ] Handle Keyboard and Mouse inputs (modify the event? how?)
+- [x] Chance the style of an element / group of elements
+- [x] DOM manipulation
+- [x] Creation / deletion of HTML elements
+- [x] Handle Keyboard and Mouse inputs
 - [ ] Change properties
 - [ ] Functional inputs (text/range/number/radio/checkbox, select, textarea)
 - [ ] Use setTimeout or setInterval
 - [ ] Use localStorage
-- [ ] Use at least 1 method from: Math, Array, String, Date (from all of them???)
+- [x] Use at least 1 method from: Math, Array, String, Date
 - [ ] Change the value of an element's properity 
 - [ ] Use the properties from classList, target or currentTarget
 - [ ] Use getComputedStyle, stopPropagation methods
