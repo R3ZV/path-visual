@@ -5,7 +5,9 @@
 - [x] Add end cell
 - [x] Implement BFS
 - [x] Render how the search goes
-- [ ] Render the shortest path
+- [x] Render the shortest path
+- [x] Add checkbox to have diagonals checked
+- [x] Add a slidebar to increase
 - [ ] Init Bun / Node project
 
 # Project Goals
@@ -16,11 +18,11 @@
 - [x] DOM manipulation
 - [x] Creation / deletion of HTML elements
 - [x] Handle Keyboard and Mouse inputs
-- [ ] Change properties
-- [ ] Functional inputs (text/range/number/radio/checkbox, select, textarea)
-- [ ] Use setTimeout or setInterval
-- [ ] Use localStorage
+- [x] Change properties
+- [x] Functional inputs (text/range/number/radio/checkbox, select, textarea)
+- [x] Use setTimeout or setInterval
 - [x] Use at least 1 method from: Math, Array, String, Date
+- [ ] Use localStorage
 - [ ] Change the value of an element's properity 
 - [ ] Use the properties from classList, target or currentTarget
 - [ ] Use getComputedStyle, stopPropagation methods
