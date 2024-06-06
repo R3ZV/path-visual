@@ -1,0 +1,17 @@
+{
+	"ro": {
+		"solve-btn": "Solve",
+		"random-btn": "Oarecare",
+		"check-diagonals": "Verifica diagonalele",
+		"deelay": "Intarziere",
+		"a*": "A* (pronunțat 'A-star') este un algoritm de parcurgere a grafurilor și de găsire a căii optime, folosit în multe domenii ale informaticii datorită completitudinii, optimalității și eficienței sale optime.  Dat un graf ponderat, un nod sursă și un nod destinație, algoritmul găsește calea cea mai scurtă (cu respectarea ponderilor date) de la sursă la destinație. Un mare dezavantaj practic este complexitatea sa spațială O(b^d), deoarece stochează toate nodurile generate în memorie. Astfel, în sistemele practice de rutare a călătoriilor, este în general depășit de algoritmi care pot pre-procesa graful pentru a obține performanțe mai bune, precum și de abordări cu memorie limitată; cu toate acestea, A* rămâne cea mai bună soluție în multe cazuri. Mai multe aici",
+		"bfs": "Căutarea în lățime (BFS) este un algoritm pentru căutarea unui nod într-o structură de date arbore care satisface o proprietate dată. Începe de la rădăcina arborelui și explorează toate nodurile la adâncimea actuală înainte de a trece la nodurile de la nivelul următor. Este nevoie de memorie suplimentară, de obicei o coadă, pentru a ține evidența nodurilor copil care au fost întâlnite dar nu încă explorate. De exemplu, într-un final de șah, un motor de șah poate construi arborele jocului din poziția curentă aplicând toate mutările posibile și utilizând căutarea în lățime pentru a găsi o poziție de câștig pentru alb. Arborii implicați (cum ar fi arborii de joc sau alți arbori de rezolvare a problemelor) pot avea dimensiuni infinite; căutarea în lățime este garantată să găsească un nod soluție dacă există unul. Mai multe aici.",
+		"dfs": "Căutarea în adâncime (DFS) este un algoritm pentru parcurgerea sau căutarea structurilor de date arbore sau graf. Algoritmul începe la nodul rădăcină (selectând un nod arbitrar ca nod rădăcină în cazul unui graf) și explorează cât de departe posibil de-a lungul fiecărei ramuri înainte de a reveni. Este nevoie de memorie suplimentară, de obicei o stivă, pentru a ține evidența nodurilor descoperite până acum de-a lungul unei ramuri specificate, ceea ce ajută la revenirea pe graf. O versiune a căutării în adâncime a fost investigată în secolul al XIX-lea de matematicianul francez Charles Pierre Trémaux ca o strategie pentru rezolvarea labirinturilor. Mai multe aici.",
+		"algorithms-info": "Informatii algoritmi:",
+		"algorithms-demo": "Demo algoritmi:",
+		"algorithms-diff": "Diferenta algoritmi:",
+		"menu": "Meniu",
+		"try": "Incearca",
+		"home": "Acasa"
+	}
+}
