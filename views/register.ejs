@@ -17,28 +17,25 @@
     <%- include('partials/navbar.ejs', { loggedin: loggedin }) %>
         <div id="container">
             <form class="flex-container" method="post" action="register-action">
-              <label>
-                Username: <input type="text" name="username"
-                                 value=""
-                                 placeholder="Username"
-                                 >
-              </label>
-              <label>
-                Password: <input type="password" name="password"
-                               value=""
-                               placeholder="Password"
-                               >
-              </label>
-              <input type="submit" value="Register">
+                <label>
+                    Username: <input type="text" name="username" value="" placeholder="Username">
+                </label>
+                <label>
+                    Password: <input type="password" name="password" value="" placeholder="Password">
+                </label>
+                <input type="submit" value="Register">
             </form>
-              <div class="flex-container">
-                  <p>Password should:<p>
-                  <ul>
+            <div class="flex-container">
+                <p>Password should:
+                <p>
+                <ul>
+                    <li>Have at least 6 characters and at most 20</li>
+                    <li>Containe a lowercase letter</li>
                     <li>Containe a cappital letter</li>
                     <li>Contain a number</li>
-                    <li>Have at least 8 characters in total</li>
-                  </ul>
-              </div>
+                </ul>
+            </div>
         </div>
 </body>
+
 </html>
