@@ -8,51 +8,40 @@
     <title>Path Visualizer</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./visual.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./footer.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="visual.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Path Visualizer</h1>
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/try">Visualizer</a>
-            </li>
-        </ul>
-    </header>
+    <%- include('partials/navbar.ejs', { loggedin: loggedin }) %>
+        <main>
+            <div id="maze">
+                <table cellspacing="0" id="grid">
+                </table>
+                <div id="inputs">
+                    <select name="algorithms" id="algorithms">
+                        <option value="bfs">BFS</option>
+                        <option value="dfs">DFS</option>
+                        <option value="a-star">A*</option>
+                    </select>
+                    <button id="solve-btn">Solve</button>
+                    <button id="random-btn">Random</button>
+                    <div>
+                        <input type="checkbox" id="check-diagonals" name="diagonals" />
+                        <label for="diagonals">Check Diagonals</label>
+                    </div>
 
-    <main>
-        <div id="maze">
-            <table cellspacing="0" id="grid">
-            </table>
-            <div id="inputs">
-                <select name="algorithms" id="algorithms">
-                    <option value="bfs">BFS</option>
-                    <option value="dfs">DFS</option>
-                    <option value="a-star">A*</option>
-                </select>
-                <button id="solve-btn">Solve</button>
-                <button id="random-btn">Random</button>
-                <div>
-                    <input type="checkbox" id="check-diagonals" name="diagonals" />
-                    <label for="diagonals">Check Diagonals</label>
-                </div>
-
-                <div>
-                    <input type="range" id="deelay" name="deelay" min="0" max="90" value="0" step="10" />
-                    <label for="cowbell">Deelay: <span id="deelay-value">0</span></label>
+                    <div>
+                        <input type="range" id="deelay" name="deelay" min="0" max="90" value="0" step="10" />
+                        <label for="cowbell">Deelay: <span id="deelay-value">0</span></label>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <footer>
-        <p>Made by R3ZV in <span>O(<del>2 *</del> weeks)</span></p>
-    </footer>
+        <%- include('partials/footer.ejs') %>
 </body>
 
 </html>
