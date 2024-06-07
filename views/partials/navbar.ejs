@@ -1,0 +1,17 @@
+<header>
+    <h1>Path Visualizer</h1>
+    <ul>
+        <li>
+            <div id="dropdown-content">
+                <a href="/">Home</a>
+                <% if (loggedin) { %>
+                    <a href="/try">Try</a>
+                    <a href="/logout">Logout</a>
+                <% } else { %>
+                    <a href="/login">Login</a>
+                    <a href="/register">Register</a>
+                <% } %>
+            </div>
+        </li>
+    </ul>
+</header>

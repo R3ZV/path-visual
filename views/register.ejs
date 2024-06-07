@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Path Visualizer</title>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <%- include('partials/navbar.ejs', { loggedin: loggedin }) %>
+        <div id="container">
+            <form class="flex-container" method="post" action="register-action">
+              <label>
+                Username: <input type="text" name="username"
+                                 value=""
+                                 placeholder="Username"
+                                 >
+              </label>
+              <label>
+                Password: <input type="password" name="password"
+                               value=""
+                               placeholder="Password"
+                               >
+              </label>
+              <input type="submit" value="Register">
+            </form>
+              <div class="flex-container">
+                  <p>Password should:<p>
+                  <ul>
+                    <li>Containe a cappital letter</li>
+                    <li>Contain a number</li>
+                    <li>Have at least 8 characters in total</li>
+                  </ul>
+              </div>
+        </div>
+</body>
+</html>

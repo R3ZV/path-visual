@@ -1,0 +1,27 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+form>* {
+    margin: 1rem;
+}
+
+input[type=submit] {
+    background: rgba(43, 168, 74, 1);
+    border: none;
+    border-radius: 10%;
+    padding: 0.5rem;
+}
+
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
